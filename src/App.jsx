@@ -10,7 +10,7 @@ export default function () {
   return (
     <>
       <UserCard time={time} setTime={setTime} timeList={timeList} />
-      <MainBody time={time} setTime={setTime} timeList={timeList} />
+      <MainBody time={time} />
     </>
   );
 }
