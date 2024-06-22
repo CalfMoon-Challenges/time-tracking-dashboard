@@ -2,9 +2,7 @@ import React from "react";
 import "./UserCard.css";
 import usericon from "./assets/images/image-jeremy.png";
 
-export default function () {
-  const timeList = ["Daily", "Weekly", "Monthly"];
-
+export default function (prop) {
   return (
     <header>
       <div className="user-box">
@@ -16,7 +14,7 @@ export default function () {
       </div>
 
       <div className="time-selector">
-        {timeList.map((value, index) => (
+        {prop.timeList.map((value) => (
           <React.Fragment key={value}>
             <input
               type="radio"
@@ -24,7 +22,8 @@ export default function () {
               name="selected-time"
               id={value}
               value={value}
-              defaultChecked={index === 0}
+              checked={prop.time === value}
+              onChange={(e) => prop.setTime(e.target.value)}
             />
             <label htmlFor={value}>{value}</label>
           </React.Fragment>
