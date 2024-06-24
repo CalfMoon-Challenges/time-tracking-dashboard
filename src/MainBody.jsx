@@ -15,25 +15,27 @@ export default function (props) {
   return (
     <main>
       {data.map((value, index) => (
-        <div className="activity" key={index}>
+        <div className={`activity activity--${index}`} key={index}>
           <div className="activity__icon">
             <img src={Icons[value.title]} alt="" />
           </div>
 
           <div className="activity__details">
-            <div className="activity__deatils__top">
-              <div className="activity__deatils__top__title">{value.title}</div>
-              <div className="activity__deatils__top__menu">
+            <div className="activity__details__top">
+              <span className="activity__details__top__title">
+                {value.title}
+              </span>
+              <span className="activity__details__top__menu">
                 <img src={ellipsis} alt="" />
-              </div>
+              </span>
             </div>
 
-            <div className="activity__deatils__time">
+            <div className="activity__details__time">
               <span className="activity__details__time__current">
                 {value.timeframes[selectedTime].current}hrs
               </span>
               <span className="activity__details__time__previous">
-                Last {lyToNormal[selectedTime]} -
+                Last {lyToNormal[selectedTime]} -{" "}
                 {value.timeframes[selectedTime].previous}hrs
               </span>
             </div>
