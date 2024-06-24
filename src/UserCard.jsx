@@ -26,7 +26,7 @@ export default function (prop) {
               onChange={(e) => prop.setTime(e.target.value)}
             />
             <label htmlFor={value} className="time-selector__label">
-              {value}
+              {value.charAt(0).toUpperCase() + value.slice(1)}
             </label>
           </React.Fragment>
         ))}

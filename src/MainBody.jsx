@@ -7,9 +7,9 @@ export default function (props) {
   const selectedTime = props.time;
   const lyToNormal = {
     // this is used to convert daily to weekly etc
-    daily: "day",
-    weekly: "week",
-    monthly: "month",
+    daily: "Day",
+    weekly: "Week",
+    monthly: "Month",
   };
 
   return (
