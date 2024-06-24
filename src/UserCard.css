@@ -1,0 +1,48 @@
+header {
+  border-radius: var(--border-radius);
+  background-color: var(--dark-blue);
+}
+
+.user-box {
+  background-color: var(--blue);
+  border-radius: var(--border-radius);
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.user-box__usericon {
+  width: 5rem;
+  height: 5rem;
+  border: 2px;
+  border-color: white;
+}
+
+.user-box__statement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-box__statement__name {
+  font-size: 1.5rem;
+}
+
+.time-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+}
+
+.time-selector__radio {
+  display: none;
+}
+
+.time-selector__label {
+  text-align: center;
+  color: var(--text-no-focus);
+}
+
+.time-selector__radio:checked + .time-selector__label {
+  color: var(--text);
+}
