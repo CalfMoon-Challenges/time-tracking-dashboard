@@ -40,10 +40,10 @@ main {
 
 .activity__details__top {
   display: flex;
+  justify-content: space-between;
 }
 
 .activity__details__top__title {
-  margin-right: auto;
   font-weight: 600;
 }
 
@@ -51,11 +51,11 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .activity__details__time__current {
   font-size: 1.6rem;
-  margin-right: auto;
 }
 
 .activity__details__time__previous {

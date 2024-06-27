@@ -29,9 +29,9 @@ header {
 }
 
 .time-selector {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   padding: 1rem;
+  justify-content: space-between;
 }
 
 .time-selector__radio {
@@ -39,7 +39,6 @@ header {
 }
 
 .time-selector__label {
-  text-align: center;
   color: var(--text-no-focus);
 }
 
