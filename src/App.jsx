@@ -5,7 +5,7 @@ import UserCard from "./UserCard";
 
 export default function () {
   const timeList = ["daily", "weekly", "monthly"];
-  const [time, setTime] = useState(timeList[0]);
+  const [time, setTime] = useState(timeList[1]);
 
   return (
     <>
