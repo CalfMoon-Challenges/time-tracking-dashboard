@@ -1,0 +1,33 @@
+@media (min-width: 550px) and (max-width: 1050px) {
+  .user-box {
+    min-width: 28rem;
+  }
+
+  .time-selector {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1050px) {
+  header {
+    max-width: 16rem;
+  }
+
+  .user-box {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .time-selector {
+    flex-direction: column;
+  }
+}
+
+/* common code between mid size and large screen */
+@media (min-width: 550px) {
+  .user-box__statement__name {
+    font-size: 2.5rem;
+    font-weight: 320;
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./UserCard.css";
+import "./UserCardResponse.css";
 import usericon from "./assets/images/image-jeremy.png";
 
 export default function (prop) {

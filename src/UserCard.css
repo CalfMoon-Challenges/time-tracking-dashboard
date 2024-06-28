@@ -1,6 +1,8 @@
 header {
   border-radius: var(--border-radius);
   background-color: var(--dark-blue);
+  display: grid;
+  grid-template-rows: 2.4fr 1fr;
 }
 
 .user-box {
@@ -9,6 +11,8 @@ header {
   display: flex;
   gap: 1rem;
   padding: 1.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .user-box__usericon {
@@ -21,7 +25,6 @@ header {
 .user-box__statement {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .user-box__statement__name {
@@ -30,7 +33,7 @@ header {
 
 .time-selector {
   display: flex;
-  padding: 1rem;
+  padding: 1.5rem;
   justify-content: space-between;
 }
 

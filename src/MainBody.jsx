@@ -1,4 +1,5 @@
 import "./MainBody.css";
+import "./MainBodyResponse.css";
 import data from "./assets/data.json";
 import Icons from "./IconIndex";
 import ellipsis from "./assets/images/icon-ellipsis.svg";
