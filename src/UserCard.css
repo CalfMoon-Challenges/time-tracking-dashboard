@@ -38,13 +38,17 @@ header {
 }
 
 .time-selector__radio {
-  display: none;
+  opacity: 0;
+  position: fixed;
+  width: 0;
 }
 
 .time-selector__label {
   color: var(--text-no-focus);
 }
 
-.time-selector__radio:checked + .time-selector__label {
+.time-selector__radio:checked + .time-selector__label,
+.time-selector__radio:focus + .time-selector__label,
+.time-selector__radio:hover + .time-selector__label {
   color: var(--text);
 }
