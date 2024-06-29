@@ -28,14 +28,25 @@ main {
 }
 
 .activity__icon {
+  height: 3rem;
   display: flex;
-  height: 60px;
+  justify-content: end;
+  padding-right: 1rem;
+}
+
+.activity__icon > img {
+  height: 150%;
 }
 
 .activity__details {
   background-color: var(--dark-blue);
   border-radius: var(--border-radius);
   padding: 1rem;
+  cursor: pointer;
+}
+
+.activity__details:hover {
+  background-color: var(--dark-blue-hover);
 }
 
 .activity__details__top {
