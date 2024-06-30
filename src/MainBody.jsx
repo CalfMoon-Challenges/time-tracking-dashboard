@@ -7,7 +7,7 @@ import ellipsis from "./assets/images/icon-ellipsis.svg";
 export default function (props) {
   const selectedTime = props.time;
   const lyToNormal = {
-    // this is used to convert daily to weekly etc
+    // this is used to convert daily to Day, weekly to Week etc
     daily: "Day",
     weekly: "Week",
     monthly: "Month",
@@ -26,9 +26,9 @@ export default function (props) {
               <span className="activity__details__top__title">
                 {value.title}
               </span>
-              <span className="activity__details__top__menu">
+              <button className="activity__details__top__menu">
                 <img src={ellipsis} alt="" />
-              </span>
+              </button>
             </div>
 
             <div className="activity__details__time">

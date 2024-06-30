@@ -57,6 +57,11 @@ main {
   justify-content: space-between;
 }
 
+.activity__details__top__menu {
+  background: none;
+  cursor: pointer;
+}
+
 .activity__details__top__title {
   font-weight: 600;
 }
