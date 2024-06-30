@@ -4,6 +4,10 @@ import "./UserCardResponse.css";
 import usericon from "./assets/images/image-jeremy.png";
 
 export default function (prop) {
+  function Capatalize(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  }
+
   return (
     <header>
       <div className="user-box">
@@ -27,7 +31,7 @@ export default function (prop) {
               onChange={(e) => prop.setTime(e.target.value)}
             />
             <label htmlFor={value} className="time-selector__label">
-              {value.charAt(0).toUpperCase() + value.slice(1)}
+              {Capatalize(value)}
             </label>
           </React.Fragment>
         ))}
