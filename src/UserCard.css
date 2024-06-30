@@ -45,6 +45,7 @@ header {
 
 .time-selector__label {
   color: var(--text-no-focus);
+  cursor: pointer;
 }
 
 .time-selector__radio:checked + .time-selector__label,
