@@ -26,7 +26,10 @@ export default function (props) {
               <span className="activity__details__top__title">
                 {value.title}
               </span>
-              <button className="activity__details__top__menu">
+              <button
+                className="activity__details__top__menu"
+                aria-label="menu-for-activity"
+              >
                 <img src={ellipsis} alt="" />
               </button>
             </div>
