@@ -8,10 +8,10 @@ export default function (prop) {
     <header>
       <div className="user-box">
         <img src={usericon} alt="" className="user-box__usericon" />
-        <p className="user-box__statement">
+        <h1 className="user-box__statement">
           <span className="user-box__statement__adresser"> Report for </span>
           <span className="user-box__statement__name"> Jeremy Robson </span>
-        </p>
+        </h1>
       </div>
 
       <div className="time-selector">

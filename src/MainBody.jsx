@@ -16,16 +16,14 @@ export default function (props) {
   return (
     <main>
       {data.map((value, index) => (
-        <div className={`activity activity--${index}`} key={index}>
+        <section className={`activity activity--${index}`} key={index}>
           <div className="activity__icon">
             <img src={Icons[value.title]} alt="" />
           </div>
 
           <div className="activity__details">
             <div className="activity__details__top">
-              <span className="activity__details__top__title">
-                {value.title}
-              </span>
+              <h2 className="activity__details__top__title">{value.title}</h2>
               <button
                 className="activity__details__top__menu"
                 aria-label="menu-for-activity"
@@ -34,7 +32,7 @@ export default function (props) {
               </button>
             </div>
 
-            <div className="activity__details__time">
+            <p className="activity__details__time">
               <span className="activity__details__time__current">
                 {value.timeframes[selectedTime].current}hrs
               </span>
@@ -42,9 +40,9 @@ export default function (props) {
                 Last {lyToNormal[selectedTime]} -{" "}
                 {value.timeframes[selectedTime].previous}hrs
               </span>
-            </div>
+            </p>
           </div>
-        </div>
+        </section>
       ))}
     </main>
   );
