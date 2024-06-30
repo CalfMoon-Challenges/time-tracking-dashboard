@@ -4,6 +4,9 @@ main {
 }
 
 .activity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: var(--border-radius);
 }
 
