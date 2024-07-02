@@ -11,7 +11,7 @@ export default function (prop) {
   return (
     <header>
       <div className="user-box">
-        <img src={usericon} alt="" className="user-box__usericon" />
+        <img src={usericon} alt="User Icon" className="user-box__usericon" />
         <h1 className="user-box__statement">
           <span className="user-box__statement__adresser"> Report for </span>
           <span className="user-box__statement__name"> Jeremy Robson </span>

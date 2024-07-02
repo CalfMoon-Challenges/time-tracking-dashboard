@@ -28,7 +28,7 @@ export default function (props) {
                 className="activity__details__top__menu"
                 aria-label="menu-for-activity"
               >
-                <img src={ellipsis} alt="" />
+                <img src={ellipsis} alt="3 dot menu" />
               </button>
             </div>
 
