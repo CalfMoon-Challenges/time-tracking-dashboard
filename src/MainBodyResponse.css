@@ -20,7 +20,6 @@
 
   .activity {
     width: 15rem;
-    min-width: auto;
   }
 
   .activity__details__time__current {
