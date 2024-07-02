@@ -26,7 +26,7 @@ export default function (props) {
               <h2 className="activity__details__top__title">{value.title}</h2>
               <button
                 className="activity__details__top__menu"
-                aria-label="menu-for-activity"
+                aria-label={`menu for ${value.title} activity`}
               >
                 <img src={ellipsis} alt="3 dot menu" />
               </button>
