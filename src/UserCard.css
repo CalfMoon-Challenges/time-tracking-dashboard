@@ -49,7 +49,10 @@ header {
 }
 
 .time-selector__radio:checked + .time-selector__label,
-.time-selector__radio:focus + .time-selector__label,
 .time-selector__radio:hover + .time-selector__label {
   color: var(--text);
+}
+
+.time-selector__radio:focus + .time-selector__label {
+  outline: white dotted 1px;
 }
